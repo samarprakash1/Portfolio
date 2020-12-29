@@ -97,6 +97,7 @@ html{
 .home{
     display: flex;
     background: url("img/back.jpg") no-repeat center;
+  
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -508,13 +509,125 @@ background: none;
     color: crimson;
     background: none;
 }
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    z-index: 9999;
+    /* background-color: crimson; */
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar-pro{
+    background-color:#333;
+}
+.navbar-pro .sticky{
+    padding: 15px 0;
+    
+}
+.navbar-pro .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-pro .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar-pro .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+.navbar-pro.sticky .logo a span{
+    color: #fff;
+}
+.navbar-pro .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar-pro .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color o.3s ease;
+}
+.navbar-pro .menu li a:hover{
+    color: crimson;
+}
+.navbar-pro.sticky .menu li a:hover{
+    color: #fff;
+}
+
+/* .js{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 5px;
+   
+   
+}
+.js-sec{
+    height: 300px;
+    width: 300px;
+    
+    
+}
+.js img{
+    margin-top: 8px;
+  vertical-align: middle;
+} */
+.js {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .js-sec {
+     -ms-flex: 30%;
+    flex: 30%;
+    max-width: 30%;
+     padding: 20px ; 
+   
+    
+  }
+  
+  
+  .js-sec img {
+    margin:0px;
+    vertical-align: middle;
+    
+    width: 80%;
+    height: 120%;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    margin-left: 100px;
+    box-shadow: 4px 4px 4px 2px #d1c9c9;
+  }
+  .js-sec h1 {
+    margin:0px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+   /* text-align: center; */
+   margin-left: 20px;
+  }
+  
 /* footer sec  */
 footer{
     background: #111;
     padding: 17px 19px;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    
 }
+
 footer span a{
     color: crimson;
     text-decoration: none;
@@ -640,3 +753,4 @@ footer span a:hover{
         font-size: 27px;
     }
 }
+
